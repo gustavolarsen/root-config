@@ -65,9 +65,8 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "@realize/mfe-camera": "https://localhost:8082/realize-mfe-camera.js",
-          "@realize/mfe-login": "https://localhost:8080/realize-mfe-login.js",
-          "@realize/root-config": "https://localhost:9000/realize-root-config.js"
+          "@realize/mfe-camera": "//localhost:8080/realize-mfe-camera.js",
+          "@realize/root-config": "//localhost:9000/realize-root-config.js"
         }
       }
     </script>
@@ -91,7 +90,7 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
-      System.import('@realize/root-config');
+      System.import("@realize/root-config");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"
